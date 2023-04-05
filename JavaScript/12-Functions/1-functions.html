@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Functions">
+    <title>Functions</title>
+</head>
+
+<body>
+    <h1>Functions</h1>
+
+    <script>
+        // Functions => Building block of a program
+        // input => proccess => output
+        // 1. Function declaration
+        // 2. Function calling
+        // Syntax
+        // parameter and arguments optional
+        // Function declaration
+        /*
+            function functionName(parameter-1, ..., parameter-N) {
+                // function body
+            }
+        */
+        // Function Calling
+        // Syntax
+        // functionName(argument, ..., argument-N)
+
+        // Function declaration
+        // function add() {
+        //     let numOne = 12;
+        //     let numTwo = 20;
+        //     let sum = numOne + numTwo;
+        //     console.log(sum);
+        // }
+
+        // // Function calling
+        // add();
+        let num = 20; // Outer variable => Scope/visible throughout the application
+        function add() {
+            let numOne = 12; // Local variable => Scope/visibilty only inside the function body
+            let numTwo = 20; // Local variable
+            let sum = numOne + numTwo; // Local variable
+            console.log(sum); // 32
+            num = num + 10; // num += 10
+            console.log(num); // 30
+        }
+
+        // Function calling
+        add();
+        console.log(num);
+    </script>
+</body>
+
+</html>
